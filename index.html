@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link da Fonte MontSerrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
+    <style>
+        .menu {
+            width: 100%;
+            /* width = Largura */
+            height: 80px;
+            /* height = altura */
+            background-color: #212529;
+            /* Background-Color - Cor de Fundo */
+            display: flex;
+            /* Flex - Para alinhar os elementos filhos*/
+
+        }
+
+        .menu .logo {
+            flex: 1;
+            /* Ocupará o espaço de 1 parte */
+            background-image: url(img-5.com/resto_logo.png);
+            /* Background-Image - Imagem de Fundo */
+            background-repeat: no-repeat;
+            /* Repetição de Background */
+            background-position: center center;
+            /* Posição do Background */
+        }
+
+        .menu ul {
+            text-align: center;
+            /* Alinhamento centralizado */
+            flex: 4;
+            /* Ocupará o espaço de 4 partes */
+            margin: top;
+            /* Espaço Externo ao Elemento */
+        }
+
+        .menu ul li {
+            display: inline;
+            /* inline - Alinhar em linha */
+            margin-left: 30px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            /* Remoção do underline */
+            color: #fff;
+            /* color - cor do texto */
+            font-family: 'Montserrat', sans-serif;
+            /* font-family - família da fonte*/
+            padding: 26px;
+        }
+
+        .menu ul li a:hover {
+            border-bottom: 3px solid #ff9100;
+            background-color: rgb(12, 35, 65);
+        }
+
+        .banner {
+            width: auto;
+            height: 400px;
+            background-image: url("img-5.com/img-the-best-burger.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner .text h2 {
+            color: #fff;
+            margin-top: 0;
+            font-family: 'Kaushan Script', cursive;
+            font-weight: 100;
+
+        }
+
+        .Pai {
+            display: flex;
+        }
+
+        .Pai .Filho1 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .Pai .Filho2 {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="menu">
+
+        <div class="logo"></div>
+
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="escola.html"> Escola </a></li>
+            <li><a href="cursos.html"> Cursos </a></li>
+            <li><a href="contato.html"> Contato </a></li>
+        </ul>
+
+    </nav>
+    <section>
+        <section class="banner">
+            <main class="text">
+                <h2>
+                    <span style="font-size: 3em;"> Fast Food </span>
+                    <br>
+                    <span style="font-size: 1em; font-family: 'Montserrat', sans-serif;">
+                        Os Lanches mais
+                        <strong style="background-color: rgba(63, 155, 45, 0.836); padding: 4px;">
+                            Saborosos
+                        </strong>em Guaratinguetá - SP!!!</span>
+                </h2>
+            </main>
+        </section>
+        <div class="Pai">
+            <div class="Filho1"><img src="https://demo.techeshta.com/html/Resto/images/order.png" alt="Hamburguer">
+            </div>
+            <div class="Filho2">
+                <h2 style="color: #37a000;">40% off</h2>
+                <h1 style="font-family: 'Kaushan Script', cursive;">Cheese Vegetable Sandwich</h1>
+                <p style="font-family: 'Montserrat', sans-serif;">Vegetable Sandwich + Cold Drink</p>
+                <button type="button" class="btn btn-success">Peça agora</button>
+            </div>
+        </div>
+        
+    <hr>
+
+    <section class="products">
+        <h2>Produtos</h2>
+        <div class="product-container">
+
+            <div class="product-items ">
+                <div class="items-img"
+                    style="background-image: url('img/1-product.jpg'); background-repeat: no-repeat; border-radius: 50%;">
+                </div>
+                <div class="items-text">
+                    <h3> Lorem, ipsum dolor.</h3>
+                    <p> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit porro minima excepturi
+                        dignissimos et cumque!
+                    </p>
+                    <p>
+                        $ 50.00
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-items ">
+                <div class="items-img"
+                    style="background-image: url('img/2-product.jpg'); background-repeat: no-repeat; border-radius: 50%;">
+                </div>
+                <div class="items-text">
+                    <h3> Lorem, ipsum dolor.</h3>
+                    <p> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit porro minima excepturi
+                        dignissimos et cumque!
+                    </p>
+                    <p>
+                        $ 50.00
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-items ">
+                <div class="items-img"
+                    style="background-image: url('img/3-product.jpg'); background-repeat: no-repeat; border-radius: 50%;">
+                </div>
+                <div class="items-text">
+                    <h3> Lorem, ipsum dolor.</h3>
+                    <p> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit porro minima excepturi
+                        dignissimos et cumque!
+                    </p>
+                    <p>
+                        $ 50.00
+                    </p>
+                </div>
+            </div>
+
+            <div class="product-items ">
+                <div class="items-img"
+                    style="background-image: url('img/4-product.jpg'); background-repeat: no-repeat; border-radius: 50%;">
+                </div>
+                <div class="items-text">
+                    <h3> Lorem, ipsum dolor.</h3>
+                    <p> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit porro minima excepturi
+                        dignissimos et cumque!
+                    </p>
+                    <p>
+                        $ 50.00
+                    </p>
+                </div>
+            </div>
+
+
+
+</body>
+
+</html>
